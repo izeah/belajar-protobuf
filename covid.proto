@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+package covid;
+
+message CovidData {
+  int32 year = 1;
+  int32 cases = 2; 
+}
+
+message CovidDataList {
+  repeated CovidData data = 1;
+}
